@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 50%;
+  width: 90%;
   margin: auto;
   padding-top: 10%;
 `;
 
-export { Container };
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export { Container, Row };
