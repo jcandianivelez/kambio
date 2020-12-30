@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Login from "./Login";
+import Signup from "./Signup";
 
 class MainRouter extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class MainRouter extends Component {
         <Switch>
           <Route exact path="/login" component={Login}></Route>
           <Route exact path="/" component={Login}></Route>
-          <Route exact path="/general" component={Login}></Route>
+          <Route exact path="/signup" component={Signup}></Route>
           <Route path="/*" component={Login}></Route>
         </Switch>
       </Router>
