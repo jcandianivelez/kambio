@@ -9,6 +9,8 @@ const Container = styled.div`
 const Row = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 180px;
 `;
 
 export { Container, Row };

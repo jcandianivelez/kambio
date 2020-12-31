@@ -1,18 +1,18 @@
+import { Button } from "antd";
+
 const SimpleButton = (props) => {
   return (
     <div style={{ marginTop: 10 }}>
-      <button type="button" class="nes-btn is-success">
-        {props.text}
-      </button>
+      <Button type="primary">{props.text}</Button>
     </div>
   );
 };
 const YellowButton = (props) => {
   return (
     <div style={{ marginTop: 10 }}>
-      <button type="button" class="nes-btn is-warning">
+      <Button type="primary" danger>
         {props.text}
-      </button>
+      </Button>
     </div>
   );
 };
