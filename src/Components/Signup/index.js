@@ -1,7 +1,7 @@
 import { SimpleTitle } from "../SubComponents/Titles";
 import { SimpleInput } from "../SubComponents/Inputs";
-import { SimpleButton, YellowButton } from "../SubComponents/Buttons";
-
+import { SimpleButton } from "../SubComponents/Buttons";
+import { Link } from "react-router-dom";
 import { Container, Row } from "./styles";
 const tailLayout = {
   wrapperCol: { offset: 0, span: 6 },
@@ -21,7 +21,9 @@ const Signup = () => {
       <SimpleInput nameField="Domicilio 2" />
       <SimpleInput nameField="Contraseña" />
       <Row>
-        <SimpleButton text="Hecho" />
+        <Link to="/">
+          <SimpleButton text="Hecho" />
+        </Link>
       </Row>
     </Container>
   );
